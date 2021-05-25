@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="0dp">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hello! App will return details of given GitHub repository"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                android:textSize="26sp" android:textStyle="bold"
+                android:gravity="center" android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp" android:layout_marginRight="10dp" android:id="@+id/textView3"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Repo owner "
+                android:ems="10"
+                android:id="@+id/ptOwner2"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" tools:layout_editor_absoluteX="24dp"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/textView6"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/ptRepoName2"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                tools:layout_editor_absoluteX="20dp"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/ptOwner"
+                android:hint="Repo name" android:textStyle="italic"/>
+        <Button
+                android:text="GET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/bGET2"
+                tools:layout_editor_absoluteX="161dp" android:shadowColor="#184219" android:backgroundTint="#4CAF50"
+                app:layout_constraintTop_toBottomOf="@+id/ptRepoName" android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView4"
+                tools:layout_editor_absoluteX="194dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" android:textSize="20sp"
+                android:text="Full name" app:layout_constraintTop_toBottomOf="@+id/bGET"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/tvName2"
+                tools:layout_editor_absoluteX="24dp"
+                android:textSize="18sp" app:layout_constraintTop_toBottomOf="@+id/textView7"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+        />
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView5"
+                tools:layout_editor_absoluteX="24dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/tvName"
+                android:text="Clone URL"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/tvCloneURL2"
+                tools:layout_editor_absoluteX="10dp"
+                android:textSize="18sp" app:layout_constraintTop_toBottomOf="@+id/textView11"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="5dp" android:textSize="20sp"
+                    android:text="Stars:" app:layout_constraintTop_toBottomOf="@+id/tvCloneURL"
+                    app:layout_constraintStart_toStartOf="parent"/>
+            <TextView
+                    android:text="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/tvStars2" android:textSize="20sp"
+                    android:layout_marginTop="10dp"/>
+        </LinearLayout>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/textView19"
+                android:text="Description"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/tvDesc2"
+                tools:layout_editor_absoluteX="31dp"
+                android:textSize="18sp" app:layout_constraintTop_toBottomOf="@+id/textView18"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:scrollbars="vertical"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
